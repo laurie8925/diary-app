@@ -22,7 +22,7 @@ function App() {
       
       <main>
         <section>
-          <h2>Prompt: What are you grateful for today?</h2>
+          <h2>Prompt: What are you thankful for today?</h2>
           <textarea
             rows="4"
             cols="50"
