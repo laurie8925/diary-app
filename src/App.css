@@ -48,3 +48,14 @@ body {
 .button:hover {
   background-color: #6eb3de;
 }
+
+.flower{ 
+  p{ 
+    display:none;
+  }
+}
+
+.flower:active p{ 
+  display: inline-block;
+  margin:0;
+}

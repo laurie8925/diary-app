@@ -75,7 +75,6 @@ function App() {
           <button className="button" onClick={handleSaveText}>Enter</button>
           {savedText && (
             <div>
-              <h3>Saved Text:</h3>
               <p>{savedText}</p>
             </div>
           )}
