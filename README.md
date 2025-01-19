@@ -2,6 +2,8 @@
 
 With Laurie, Mariana, and Stephanie
 
+Special thanks to Nick W
+
 
 # Getting Started with Create React App
 

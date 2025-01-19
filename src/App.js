@@ -6,19 +6,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Mossy Memos</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React - Steph change
-        </a>
       </header>
+
+      
+      <main>
+        <section>
+          <h2>Prompt: What are you grateful for today?</h2>
+          <textarea rows="4" cols="50" placeholder="Write your thoughts here..."></textarea>
+        </section>
+      </main>
+
     </div>
   );
 }
