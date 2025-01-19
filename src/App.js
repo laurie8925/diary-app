@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Prompt from "./datas/prompts.json"
 import './App.css';
+import Flower from "./components/flower"
 
 function App() {
   const [text, setText] = useState('');
@@ -20,6 +21,13 @@ function App() {
   const handleSaveText = () => {
     setSavedText(text);
     setText('');
+  };
+
+  const handleNewPrompt = () => {
+    const randomPrompt = Prompt[Math.floor(Math.random() * Prompt.length)];
+    setCurrentPrompt(randomPrompt);
+    setText(''); 
+    setSavedText(''); 
   };
 
   return (
@@ -45,7 +53,10 @@ function App() {
               <p>{savedText}</p>
             </div>
           )}
+          <button onClick={handleNewPrompt}>New Prompt</button>
         </section>
+        <section></section>
+        <Flower/>
       </main>
     </div>
   );
