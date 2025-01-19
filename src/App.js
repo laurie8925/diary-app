@@ -38,15 +38,16 @@ function App() {
       
       <main>
         <section>
-          <h2>{currentPrompt}</h2>
+          <h2 className="prompt">{currentPrompt}</h2>
           <textarea
+            className="textarea"
             rows="4"
             cols="50"
             placeholder="Write your thoughts here..."
             value={text}
             onChange={handleTextChange}
           ></textarea>
-          <button onClick={handleSaveText}>Enter</button>
+          <button className="button" onClick={handleSaveText}>Enter</button>
           {savedText && (
             <div>
               <h3>Saved Text:</h3>

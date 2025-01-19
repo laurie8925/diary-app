@@ -1,3 +1,36 @@
 .App {
   text-align: center;
 }
+
+body {
+  background-color: #D4EFFF;
+  text-align: center;
+}
+
+.prompt {
+  color: #000;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 7vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textarea {
+  color: var(--text-box, #AC7062);
+  font-family: "Josefin Sans";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 80%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin-bottom: 1vw;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+}
