@@ -80,7 +80,6 @@ function App() {
             </div>
           )}
 
-        </section>
         <section>
           {savedLists.map((answer,index)=> (
             <Flower key={index} savedText={answer} flowerIndex={index}/>
