@@ -4,74 +4,25 @@ With Laurie, Mariana, and Stephanie
 
 Special thanks to Nick W
 
+## Inspiration
+We wanted to create a space where people could take some time to reflect about their day in a mindful way. 
 
-# Getting Started with Create React App
+## What it does
+This cozy online diary assigns you a new prompt every day. You can answer the prompt with text or an image and save it. For every completed prompt, you receive a flower for your garden. Throughout the week you can look back at your old prompts. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How we built it
+We designed on paper and then translated it into Figma. For the backend we used React, HTML, and CSS. We used Co-pilot for debugging, Git and Github for version control. Also, the power of friendship was very instrumental.
 
-## Available Scripts
+## Challenges we ran into
+Setting up React was difficult. Most of us coming form a non-coding background, it was hard to learn new languages and softwares that weren't necessarily intuitive to our skillset. For example, learning to "save" the prompt response took a long time. Translating the design into code was also hard to navigate as it is time consuming. 
 
-In the project directory, you can run:
+## Accomplishments that we're proud of
+Getting to talk to people/ mentors and learning from our team mates (breaking out of my shell). Finishing a project was also a goal that we came into the hackathon with and we were (mostly) able to complete. 
 
-### `npm start`
+On the design end, I am proud of the work that went into the Figma prototype as well as the care that went into selecting and drawing the daily flower. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What we learned
+The importance of supportive teammates and having an environment that makes it fun and safe to explore. We all learned a skill that we were previously uncomfortable with. Its all about trying something new and being afraid to fail (it is always alright, we are learners!). Also, how to be open and honest communicators!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for Mossy Memos
+We want to be able to link Memos with other people so you can view your friends' Memos and gardens. We would also like to expand the amount of flowers and maybe create a page where you can learn about your flower of the day!
