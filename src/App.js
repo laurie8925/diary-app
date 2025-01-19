@@ -54,7 +54,7 @@ function App() {
               <p>{savedText}</p>
             </div>
           )}
-          <button onClick={handleNewPrompt}>New Prompt</button>
+          <button className="button" onClick={handleNewPrompt}>New Prompt</button>
         </section>
         <section></section>
         <Flower/>

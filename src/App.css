@@ -32,5 +32,19 @@ body {
 
 .button {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-family: "Josefin Sans";
+  font-size: 5vw;
+  font-weight: 600;
+  color: #fff;
+  background-color: #88ced7;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #6eb3de;
 }
