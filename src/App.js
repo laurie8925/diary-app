@@ -6,29 +6,54 @@ import Flower from "./components/flower"
 function App() {
   const [text, setText] = useState('');
   const [savedText, setSavedText] = useState('');
-  const [currentPrompt, setCurrentPrompt] = useState('');
-
+  const [savedLists, setSavedLists] = useState([]);
+  const [promptState, setPromptState] = useState({
+    currentPrompt: '',
+    remainingPrompts: [],
+  });
 
   useEffect(() => {
-    const randomPrompt = Prompt[Math.floor(Math.random() * Prompt.length)];
-    setCurrentPrompt(randomPrompt);
-  }, []);
+    const shuffledPrompt = shuffleArray([...Prompt]); 
+    setPromptState({
+      currentPrompt: shuffledPrompt[0],
+      remainingPrompts: shuffledPrompt.slice(1),
+    }); 
+  },[]); 
+  const shuffleArray = (array) => { //randomized array 
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
 
   const handleTextChange = (event) => {
     setText(event.target.value);
   };
 
   const handleSaveText = () => {
+    const { remainingPrompts } = promptState;
+    let nextPrompt = '';
+    let newRemainingPrompts = [];
+
+    if (remainingPrompts.length > 0) {
+      nextPrompt = remainingPrompts[0];
+      newRemainingPrompts = remainingPrompts.slice(1);
+    } else {
+      const reshuffledPrompts = shuffleArray([...Prompt]);
+      nextPrompt = reshuffledPrompts[0];
+      newRemainingPrompts = reshuffledPrompts.slice(1);
+    }
+
+    setPromptState({
+      currentPrompt: nextPrompt,
+      remainingPrompts: newRemainingPrompts,
+    });
     setSavedText(text);
+    setSavedLists([...savedLists, text]);
     setText('');
   };
 
-  const handleNewPrompt = () => {
-    const randomPrompt = Prompt[Math.floor(Math.random() * Prompt.length)];
-    setCurrentPrompt(randomPrompt);
-    setText(''); 
-    setSavedText(''); 
-  };
 
   return (
     <div className="App">
@@ -37,8 +62,8 @@ function App() {
       </header>
       
       <main>
-        <section>
-          <h2 className="prompt">{currentPrompt}</h2>
+    
+          <h2 className="prompt">{promptState.currentPrompt}</h2>
           <textarea
             className="textarea"
             rows="4"
@@ -54,10 +79,13 @@ function App() {
               <p>{savedText}</p>
             </div>
           )}
-          <button className="button" onClick={handleNewPrompt}>New Prompt</button>
+
         </section>
-        <section></section>
-        <Flower/>
+        <section>
+          {savedLists.map((answer,index)=> (
+            <Flower key={index} savedText={answer} flowerIndex={index}/>
+          ))}
+        </section>
       </main>
     </div>
   );
