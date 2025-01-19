@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Prompt from "./datas/prompts.json"
 import './App.css';
 
 function App() {
   const [text, setText] = useState('');
   const [savedText, setSavedText] = useState('');
+  const [currentPrompt, setCurrentPrompt] = useState('');
+
+
+  useEffect(() => {
+    const randomPrompt = Prompt[Math.floor(Math.random() * Prompt.length)];
+    setCurrentPrompt(randomPrompt);
+  }, []);
 
   const handleTextChange = (event) => {
     setText(event.target.value);
@@ -22,7 +30,7 @@ function App() {
       
       <main>
         <section>
-          <h2>Prompt: What are you thankful for today?</h2>
+          <h2>{currentPrompt}</h2>
           <textarea
             rows="4"
             cols="50"
